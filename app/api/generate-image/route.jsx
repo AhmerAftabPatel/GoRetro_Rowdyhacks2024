@@ -17,7 +17,7 @@ export async function POST(req){
            num_outputs:1
         };
         
-        const output = await replicate.run("", { input });
+        const output = await replicate.run("bytedance/sdxl-lightning-4step:5599ed30703defd1d160a25a63321b4dec97101d98b4674bcc56e41f62f35637", { input });
         console.log(output, "Image generation is it working?????")
         //Save to Firebase
         const base64Image="data:image/png;base64,"+await ConvertImage(output[0])

@@ -8,9 +8,9 @@ import { useEffect } from "react";
 
 export default function Home() {
   const router = useRouter()
-  useEffect(() => {
-    router.replace('/sign-in')
-  }, [])
+  // useEffect(() => {
+  //   router.replace('/sign-in')
+  // }, [])
   return (
     <div>
       

@@ -55,8 +55,8 @@ function CreateNew() {
   // Get Video Script
   const GetVideoScript = async () => {
     setLoading(true)
-    // const prompt = 'Write a script to generate ' + formData.duration + ' video on topic : ' + formData.topic + ' along with AI image prompt in ' + formData.imageStyle + ' format for each scene and give me result in JSON format with imagePrompt and ContentText as field, No Plain text'
-    const prompt = formData.heroStyle + 'in' + formData.eraStyle
+    // const prompt = 'Write a script to generate ' + formData.duration + ' video on topic : ' + formData.topic + ' c ' + formData.imageStyle + ' format for each scene and give me result in JSON format with imagePrompt and ContentText as field, No Plain text'
+    const prompt = 'Write a script to generate max 30 sec video on given topic about' + formData.heroStyle + ' time travelled to' + formData.eraStyle + "era or period"
     console.log(prompt)
 
     const resp = await axios.post('/api/get-video-script', {

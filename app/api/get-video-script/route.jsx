@@ -11,7 +11,7 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content: "Your task is to write one story script to generate 30 seconds video on the given topic and style along with AI image prompt in given format for the scene, divide the story into scenes with different images and give me result in JSON format with imagePrompt and ContentText as field. example format {data: [{imagePrompt : '', ContentText : ''}]}, No Plain text.",
+          content: "Your task is to write one story script to generate max 30 seconds video on the given topic about a given person and style in that given era or period along with AI image prompt in given format for the scene, divide the story into scenes with different images and give me result in JSON format with imagePrompt and ContentText as field. example format {data: [{imagePrompt : '', ContentText : ''}]}, No Plain text.",
         },
         { role: "user", content: prompt  },
       ],
